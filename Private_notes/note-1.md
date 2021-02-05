@@ -15,6 +15,7 @@
  - Scirpts contins the code to perform specific stasks for eg : train a model
  - You need an environment to run the script with all necessary libraries installed
  - Experiment will store all the information related to input and output and all log files. Thus running a script as an experiment.
+ - Use a ScriptRunConfig to run a model training script as an Azure Machine Learning experiment.
  
 # Register a model
 - Note that the outputs of the experiment include the trained model file (diabetes_model.pkl). You can register this model in your Azure Machine Learning workspace, making it possible to track model versions and retrieve them later.
