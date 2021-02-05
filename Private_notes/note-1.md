@@ -13,6 +13,6 @@
  # Relation between Script, Experiment and Environment
  (Script based Experiment)
  - Scirpts contins the code to perform specific stasks for eg : train a model
- - You need an environment to run the script with all necessary libraries instaled
+ - You need an environment to run the script with all necessary libraries installed
  - Experiment will store all the information related to input and output and all log files. Thus running a script as an experiment.
  
