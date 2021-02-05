@@ -16,3 +16,6 @@
  - You need an environment to run the script with all necessary libraries installed
  - Experiment will store all the information related to input and output and all log files. Thus running a script as an experiment.
  
+# Register a model
+- Note that the outputs of the experiment include the trained model file (diabetes_model.pkl). You can register this model in your Azure Machine Learning workspace, making it possible to track model versions and retrieve them later.
+- You can also view registered models in your workspace on the Models page
