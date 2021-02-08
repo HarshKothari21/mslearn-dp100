@@ -1,0 +1,30 @@
+----------------Logging Metrics------------------
+
+- log: Record a single named value.
+- log_list: Record a named list of values.
+- log_row: Record a row with multiple columns.
+- log_table: Record a dictionary as a table.
+- log_image: Record an image file or a plot.
+
+
+----------------Example--------------------------
+
+data = pd.read_csv('data.csv')
+row_count = (len(data))
+
+# Log the count
+run.log('observations', row_count)
+
+
+------Retrieving and Viewing Logged Metrics-------
+
+1. RunDetails
+
+from azureml.widgets import RunDetails
+RunDetails(run).show()
+
+2. get_metrics method
+
+# Get logged metrics
+metrics = run.get_metrics()
+print(json.dumps(metrics, indent=2))
