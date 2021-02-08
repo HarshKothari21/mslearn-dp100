@@ -9,7 +9,7 @@ ws = Workspace.create(name='aml-workspace',
                      )
                      
                      
---------------Creating Experiment--------------
+----------------Creating Experiment--------------
 
 from azureml.core import Experiment
 
@@ -25,3 +25,11 @@ run = experiment.start_logging()
 run.complete()
 
 ----------------Logging Metrics----------------
+
+- log: Record a single named value.
+- log_list: Record a named list of values.
+- log_row: Record a row with multiple columns.
+- log_table: Record a dictionary as a table.
+- log_image: Record an image file or a plot.
+
+-----------------
