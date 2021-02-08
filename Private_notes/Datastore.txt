@@ -1,0 +1,23 @@
+-----------------------Create Datastore-----------------
+
+# Register a new datastore
+blob_ds = Datastore.register_azure_blob_container(workspace=ws, 
+                                                  datastore_name='blob_data', 
+                                                  container_name='data_container',
+                                                  account_name='az_store_acct',
+                                                  account_key='123456abcde789…')
+                                                  
+                
+ ----------------------Get datastore---------------------
+ 
+ 1. blob_store = Datastore.get(ws, datastore_name='blob_data')
+ 
+ 2. default_store = ws.get_default_datastore()
+ 
+ 
+ -----------------------change default datastore------------
+ 
+ ws.set_default_datastore('blob_data')
+ 
+ 
+ 
