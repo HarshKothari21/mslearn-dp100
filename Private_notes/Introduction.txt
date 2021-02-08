@@ -1,0 +1,27 @@
+---------------Creating a workspace------------
+
+from azureml.core import Workspace
+ws = Workspace.create(name='aml-workspace', 
+                      subscription_id='123456-abc-123...',
+                      resource_group='aml-resources',
+                      create_resource_group=True,
+                      location='eastus'
+                     )
+                     
+                     
+--------------Creating Experiment--------------
+
+from azureml.core import Experiment
+
+# create an experiment variable
+experiment = Experiment(workspace = ws, name = "my-experiment")
+
+# start the experiment
+run = experiment.start_logging()
+
+# experiment code goes here
+
+# end the experiment
+run.complete()
+
+----------------Logging Metrics----------------
