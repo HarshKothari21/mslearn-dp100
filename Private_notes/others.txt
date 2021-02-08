@@ -1,0 +1,9 @@
+-------------Get list of output files--------------
+
+files = run.get_file_names()
+print(json.dumps(files, indent=2))
+
+
+-------------
+
+
