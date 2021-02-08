@@ -49,7 +49,6 @@ packages = CondaDependencies.create(conda_packages=['scikit-learn','pip'],
                                     pip_packages=['azureml-defaults'])
                                     
                                     
-                                    
 ---------------Scriptconfig + environment -------------
 
 script_config = ScriptRunConfig(source_directory='training_folder',
