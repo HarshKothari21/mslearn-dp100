@@ -4,6 +4,25 @@ files = run.get_file_names()
 print(json.dumps(files, indent=2))
 
 
--------------
+-------------Register Model-------------------------
 
+from azureml.core import Model
 
+model = Model.register(workspace=ws,
+                       model_name='classification_model',
+                       model_path='model.pkl', # local path
+                       description='A classification model',
+                       tags={'data-format': 'CSV'},
+                       model_framework=Model.Framework.SCIKITLEARN,
+                       model_framework_version='0.20.3')
+                       
+             ----or----
+             
+ run.register_model( model_name='classification_model',
+                    model_path='outputs/model.pkl', # run outputs path
+                    description='A classification model',
+                    tags={'data-format': 'CSV'},
+                    model_framework=Model.Framework.SCIKITLEARN,
+                    model_framework_version='0.20.3')
+                    
+                    
