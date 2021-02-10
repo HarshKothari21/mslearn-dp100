@@ -1,3 +1,5 @@
+You can view the metrics and outputs from the experiment run in Azure Machine Learning Studio, or by running the code
+
 ----------------Logging Metrics------------------
 
 - log: Record a single named value.
