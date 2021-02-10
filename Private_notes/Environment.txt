@@ -1,0 +1,10 @@
+There are three ways to use environment
+
+1. Create
+The create method requires you to explicitly specify conda and pip packages which creates a new environment.
+
+2. from_conda_specification
+Use the from_conda_specification method to create an environment from a configuration file(.yml).
+
+3. from_existing_conda_environment 
+The from_existing_conda_environment requires an existing environment on the computer.
