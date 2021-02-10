@@ -26,3 +26,13 @@ model = Model.register(workspace=ws,
                     model_framework_version='0.20.3')
                     
                     
+ -----------------Register environment----------------------
+ 
+ diabetes_env.register(workspace=ws)
+ 
+ 
+ -------------------Use Existing environment---------------
+ 
+ registered_env = Environment.get(ws, 'diabetes-experiment-env')
+
+
