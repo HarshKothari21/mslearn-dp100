@@ -1,3 +1,5 @@
+You can also view and manage datastores in your workspace on the Datastores page for your workspace
+
 -----------------------Create Datastore-----------------
 
 # Register a new datastore
@@ -10,9 +12,12 @@ blob_ds = Datastore.register_azure_blob_container(workspace=ws,
                 
  ----------------------Get datastore---------------------
  
- 1. blob_store = Datastore.get(ws, datastore_name='blob_data')
+ 1. blob_store = Datastore.get(ws, datastore_name='blob_data')        #Get particular datastore
  
- 2. default_store = ws.get_default_datastore()
+ 2. default_store = ws.get_default_datastore()        #Get default datastore
+ 
+ 3. for ds_name in ws.datastores:          #Get all datastores
+      print(ds_name)
  
  
  -----------------------change default datastore------------
@@ -20,4 +25,11 @@ blob_ds = Datastore.register_azure_blob_container(workspace=ws,
  ws.set_default_datastore('blob_data')
  
  
+ ----------------------Upload data to datastore--------------
+ 
+ default_ds = ws.get_default_datastore()
+ default_ds.upload_files(files=['./data/diabetes.csv', './data/diabetes2.csv'],
+                       target_path='diabetes-data/', # Put it in a folder path in the datastore
+                       overwrite=True, # Replace existing files of the same name
+                       show_progress=True)
  
