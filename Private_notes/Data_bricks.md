@@ -1,3 +1,7 @@
 - Azure Databricks is a fully-managed version of the open-source Apache Spark analytics and data processing engine. Azure Databricks is an enterprise-grade and secure cloud-based big data and machine learning platform.
 - Databricks provides a notebook-oriented Apache Spark as-a-service workspace environment, making it easy to manage clusters and explore data interactively.
 - DBFS : DataBricks File System
+- Single Driver
+
+![](viz3.png)
+
