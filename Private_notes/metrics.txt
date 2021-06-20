@@ -30,3 +30,10 @@ RunDetails(run).show()
 # Get logged metrics
 metrics = run.get_metrics()
 print(json.dumps(metrics, indent=2))
+
+--------------Incase of other libraries------------------
+
+import mlflow
+mlflow.start_run()
+mlflow.log_metric('var',np.float(value))
+mlflow.end_run()
