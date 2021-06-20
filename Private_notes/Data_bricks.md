@@ -8,3 +8,15 @@
 ![](viz3.png)
 
 - Spark is a Distributed computing environment.
+
+## Reading Data in Azure Databricks
+
+TempDF = ( spark.read #Dataframe reader
+    .option("sep", "\t")        # Use tab delimiter (default is comma-separator)
+    .option("header", "true")   # Use first line of all files as header
+    .csv(csvFile)               # Creates a DataFrame from CSV after reading in the file
+    .json(jsonFile)             # Creates a DataFrame from JSON after reading in the file
+    .parquet(parquetFile)       # create a DataFrame from a parquet file
+    .schema(csvSchema)          # Use the specified schema
+    .option("inferSchema", "true")  # Automatically infer data types
+    .printSchema()              # Print the Schema 
