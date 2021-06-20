@@ -17,3 +17,5 @@ To start working on notebooks you will need a compute instance. So create a comp
 
 ![](viz2.png)
 
+## AKS
+- High scale production deployment | Autoscale | Manage high traffic
