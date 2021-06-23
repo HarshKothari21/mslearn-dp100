@@ -22,3 +22,6 @@ To start working on notebooks you will need a compute instance. So create a comp
 
 ## ACI 
 - Low comutation power | Testing purpose
+
+## Run Object
+https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py
