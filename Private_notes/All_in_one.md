@@ -19,3 +19,6 @@ To start working on notebooks you will need a compute instance. So create a comp
 
 ## AKS
 - High scale production deployment | Autoscale | Manage high traffic | GPU support | Real_time
+
+## ACI 
+- Low comutation power | Testing purpose
