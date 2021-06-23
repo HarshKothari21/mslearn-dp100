@@ -11,6 +11,7 @@
 
 ## Reading Data in Azure Databricks
 
+```
 TempDF = ( spark.read #Dataframe reader
     .option("sep", "\t")        # Use tab delimiter (default is comma-separator)
     .option("header", "true")   # Use first line of all files as header
@@ -20,3 +21,4 @@ TempDF = ( spark.read #Dataframe reader
     .schema(csvSchema)          # Use the specified schema
     .option("inferSchema", "true")  # Automatically infer data types
     .printSchema()              # Print the Schema 
+```
